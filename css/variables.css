@@ -1,0 +1,112 @@
+/* ============================================
+   VARIABLES CSS (DESIGN TOKENS)
+   Definidas en :root para que estén disponibles
+   en todo el documento. Cambiar un valor aquí
+   actualiza el sitio completo.
+   ============================================ */
+
+   :root {
+    /* --------------------------------------------
+       COLORES - PALETA TEMA OSCURO
+       -------------------------------------------- */
+    
+    /* Fondo principal de la página (muy oscuro, casi negro) */
+    --color-bg: #0a0a0a;
+    
+    /* Fondo para secciones que necesitan diferenciarse
+       ligeramente del principal */
+    --color-bg-elevated: #141414;
+    
+    /* Fondo para cards y elementos contenidos.
+       Más claro que el principal para crear profundidad. */
+    --color-bg-card: #1a1a1a;
+    
+    /* Color para bordes sutiles entre elementos */
+    --color-border: #2a2a2a;
+    
+    /* Texto principal (títulos, contenido importante).
+       Blanco roto para no causar fatiga visual. */
+    --color-text-primary: #f5f5f5;
+    
+    /* Texto secundario (descripciones, párrafos) */
+    --color-text-secondary: #a3a3a3;
+    
+    /* Texto poco importante (metadatos, copyright) */
+    --color-text-muted: #6b6b6b;
+    
+    /* Color de acento (botones, links, detalles).
+       Verde menta: moderno y se ve bien sobre oscuro. */
+    --color-accent: #4ade80;
+    
+    /* Versión más oscura del acento para estados hover */
+    --color-accent-hover: #22c55e;
+
+      --color-danger: #f87171;
+    
+    /* --------------------------------------------
+       TIPOGRAFÍA
+       -------------------------------------------- */
+    
+    /* Stack de fuentes: Inter primero, y si no carga
+       usa la fuente del sistema operativo como fallback. */
+    --font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    
+    /* Escala tipográfica. Usamos rem (relativo al font-size del html)
+       para que respete las preferencias de accesibilidad del usuario. */
+    --font-size-xs: 0.75rem;     /* 12px - texto muy pequeño */
+    --font-size-sm: 0.875rem;    /* 14px - texto secundario */
+    --font-size-base: 1rem;      /* 16px - texto normal */
+    --font-size-lg: 1.125rem;    /* 18px - texto destacado */
+    --font-size-xl: 1.25rem;     /* 20px - subtítulos pequeños */
+    --font-size-2xl: 1.5rem;     /* 24px - subtítulos */
+    --font-size-3xl: 2rem;       /* 32px - títulos de sección */
+    
+    /* clamp(min, ideal, max) crea tipografía FLUIDA:
+       - Mínimo 2.5rem en pantallas pequeñas
+       - Crece con 5vw (5% del ancho de viewport)
+       - Máximo 4rem en pantallas grandes
+       Ideal para títulos hero que deben adaptarse. */
+    --font-size-4xl: clamp(2.5rem, 5vw, 4rem);
+    
+    /* Pesos de la fuente Inter que cargamos */
+    --font-weight-regular: 400;   /* Texto normal */
+    --font-weight-medium: 500;    /* Énfasis sutil */
+    --font-weight-semibold: 600;  /* Subtítulos */
+    --font-weight-bold: 700;      /* Títulos principales */
+    
+    /* --------------------------------------------
+       ESPACIADO - ESCALA CONSISTENTE
+       Todos los espaciados del sitio usan estos valores.
+       Nunca uses números arbitrarios como 13px o 27px.
+       -------------------------------------------- */
+    
+    --space-1: 0.25rem;   /* 4px  - separaciones mínimas */
+    --space-2: 0.5rem;    /* 8px  - gap entre elementos cercanos */
+    --space-3: 0.75rem;   /* 12px - padding interno pequeño */
+    --space-4: 1rem;      /* 16px - espaciado base */
+    --space-6: 1.5rem;    /* 24px - padding de cards */
+    --space-8: 2rem;      /* 32px - separación entre bloques */
+    --space-12: 3rem;     /* 48px - separación grande */
+    --space-16: 4rem;     /* 64px - separación entre secciones */
+    --space-24: 6rem;     /* 96px - padding vertical de secciones */
+    
+    /* --------------------------------------------
+       LAYOUT
+       -------------------------------------------- */
+    
+    /* Ancho máximo del contenido. En pantallas grandes
+       el contenido se centra y no se estira infinitamente. */
+    --max-width: 1200px;
+    
+    /* Bordes redondeados consistentes */
+    --border-radius: 8px;      /* Para botones e inputs */
+    --border-radius-lg: 12px;  /* Para cards */
+    
+    /* --------------------------------------------
+       TRANSICIONES
+       -------------------------------------------- */
+    
+    /* Duración estándar para hover y otros cambios de estado.
+       200ms se siente rápido pero no abrupto. */
+    --transition: 150ms ease;
+  }

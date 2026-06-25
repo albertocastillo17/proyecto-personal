@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luis | Desarrollador Frontend</title>
+
+  <!-- Fuente Inter desde Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <a href="#" class="header__logo">
+        Alberto Castillo<span class="header__logo-accent">.</span>
+      </a>
+
+      <!-- Navegación principal -->
+      <nav class="header__nav" aria-label="Navegación Principal">
+        <ul class="header__nav-list">
+          <li><a href="#about" class="header__nav-link">Sobre Mi</a></li>
+          <li><a href="#skills" class="header__nav-link">Habilidades</a></li>
+          <li><a href="#projects" class="header__nav-link">Proyectos</a></li>
+          <li><a href="#contact" class="header__nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="header__cta">
+        Contactarme
+      </a>
+
+      <button class="header__menu-toggle" aria-label="Abrir Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__container">
+        <p class="hero__eyebrow">
+          <span class="hero__status-dot"></span>
+          Disponible para nuevos proyectos
+        </p>
+
+        <h1 class="hero__title">
+          Hola, Soy Alberto Castillo<span class="hero__accent">.</span><br>
+          Construyo Interfaces <span class="hero__highlight">Limpias y Funcionales</span>.
+        </h1>
+
+        <p class="hero__description">
+          Desarrollador Frontend enfocado en crear experiencias web accesibles, rápidas y agradables de usar.
+          Actualmente explorando React y construyendo proyectos desde cero.
+        </p>
+
+        <div class="hero__cta-group">
+          <a href="#projects" class="btn btn--primary">
+            Ver Proyectos
+          </a>
+          <a href="#contact" class="btn btn--secondary">
+            Contactarme
+          </a>
+        </div>
+
+        <div class="hero__meta">
+
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Ubicación</span>
+            <span class="hero__meta-value">México</span>
+          </div>
+
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Enfoque</span>
+            <span class="hero__meta-value">Frontend</span>
+          </div>
+
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Tecnologías</span>
+            <span class="hero__meta-value">HTML, CSS, JavaScript, React</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about__container">
+        <div class="section__header">
+          <span class="section-header__label">Sobre Mi</span>
+          <h2 class="section-header__title">Un poco sobre mi historia</h2>
+          <p class="section-header__description">
+            Conoce mas sobre mi camino en el desarrollo web y lo que me motiva a construir interfaces
+          </p>
+        </div>
+
+        <div class="about__content">
+          <div class="about__image-wrapper">
+            <div class="about__image-placeholder">
+              <span class="about__image-initials">JA</span>
+            </div>
+
+            <div class="about__badge">
+              <span class="about__badge-icon">👋</span>
+              <span class="about__badge-text">¡Hola!</span>
+            </div>
+          </div>
+
+          <div class="about__text">
+            <p class="about__paragraph">
+              Soy un desarrollador frontend autodidacta que descubrió
+              la programación hace un par de años y se enamoró del proceso
+              de transformar ideas en interfaces reales.
+            </p>
+
+            <p class="about__paragraph">
+              Me apasiona el detalle: desde la elección de tipografía
+              hasta la forma en que un botón responde al hover. Creo que
+              esos detalles son los que separan una interfaz funcional
+              de una memorable.
+            </p>
+
+            <p class="about__paragraph">
+              Actualmente estoy enfocado en dominar los fundamentos de
+              HTML, CSS y JavaScript antes de saltar a frameworks.
+              Mi siguiente paso es React.
+            </p>
+
+            <ul class="about__facts">
+              <li class="about__fact">
+                <span class="about__fact-icon">🎯</span>
+                <div>
+                  <span class="about__fact-label">Objetivo Actual</span>
+                  <span class="about__fact-value">Conseguir un trabajo como desarrollador frontend</span>
+                </div>
+              </li>
+              <li class="about__fact">
+                <span class="about__fact-icon">📚</span>
+                <div>
+                  <span class="about__fact-label">Aprendiendo</span>
+                  <span class="about__fact-value">CSS, Grid Avanzado, y accesibilidad web</span>
+                </div>
+              </li>
+              <li class="about__fact">
+                <span class="about__fact-icon">☕</span>
+                <div>
+                  <span class="about__fact-label">Fuera del código</span>
+                  <span class="about__fact-value">Café, lectura y ver series</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="container skills__container">
+        <div class="section__header">
+          <span class="section-header__label">Habilidades</span>
+          <h2 class="section-header__title">Tecnologías que uso</h2>
+          <p class="section-header__description">
+            Estas son las herramientas con las que trabajo hoy y las que estoy
+            sumando poco a poco a mi caja de herramientas.
+          </p>
+        </div>
+
+        <div class="skills__grid">
+          <article class="skill-card">
+            <span class="skill-card__icon">🎨</span>
+            <h3 class="skill-card__title">Frontend</h3>
+            <p class="skill-card__description">
+              La base de todo lo que construyo: estructura, estilos e
+              interactividad en el navegador.
+            </p>
+
+            <ul class="skill-card__tags">
+              <li class="skill-card__tag">HTML</li>
+              <li class="skill-card__tag">CSS</li>
+              <li class="skill-card__tag">JavaScript</li>
+              <li class="skill-card__tag">Responsive Design</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon">🚀</span>
+            <h3 class="skill-card__title">Herramientas</h3>
+            <p class="skill-card__description">
+              Lo que uso para escribir, versionar y depurar mi código
+              en el día a día.
+            </p>
+            <ul class="skill-card__tags">
+              <li class="skill-card__tag">Git</li>
+              <li class="skill-card__tag">GitHub</li>
+              <li class="skill-card__tag">VS Code</li>
+              <li class="skill-card__tag">DevTools</li>
+            </ul>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-card__icon">📚</span>
+            <h3 class="skill-card__title">Aprendiendo</h3>
+            <p class="skill-card__description">
+              En lo que estoy enfocado ahora mismo para dar el siguiente
+              paso en mi carrera.
+            </p>
+            <ul class="skill-card__tags">
+              <li class="skill-card__tag">React</li>
+              <li class="skill-card__tag">Accesibilidad</li>
+              <li class="skill-card__tag">Grid Avanzado</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects" id="projects">
+      <div class="container projects__container">
+        <div class="section__header">
+          <span class="section-header__label">Proyectos</span>
+          <h2 class="section-header__title">Algunos de mis trabajos</h2>
+          <p class="section-header__description">
+            Proyectos donde aplico lo que voy aprendiendo. Cada uno me dejó algo nuevo.
+          </p>
+        </div>
+
+        <div class="projects__grid">
+          <article class="project-card">
+            <div class="project-card__thumb">
+              <span class="project-card__thumb-icon">🛒</span>
+            </div>
+
+            <div class="project-card__body">
+              <h3 class="project-card__title">Tienda Online</h3>
+              <p class="project-card__description">
+                Catálogo de productos con carrito de compras. Mi primer proyectos
+                manejando estado en JavaScript.
+              </p>
+              <ul class="project-card__tags">
+                <li class="project-card__tag">HTML</li>
+                <li class="project-card__tag">CSS</li>
+                <li class="project-card__tag">JavaScript</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Ver Demo →</a>
+                <a href="#" class="project-card__link project-card__link--muted">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__thumb">
+              <span class="project-card__thumb-icon">🌤️</span>
+            </div>
+
+            <div class="project-card__body">
+              <h3 class="project-card__title">App del Clima</h3>
+              <p class="project-card__description">
+                Consume una API pública para obtener el clima de cualquier
+                ciudad. Aquí aprendí a trabajar con fetch y async/await.
+              </p>
+              <ul class="project-card__tags">
+                <li class="project-card__tag">JavaScript</li>
+                <li class="project-card__tag">API REST</li>
+                <li class="project-card__tag">CSS</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Ver Demo →</a>
+                <a href="#" class="project-card__link project-card__link--muted">Código</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card__thumb">
+              <span class="project-card__thumb-icon">✅</span>
+            </div>
+
+            <div class="project-card__body">
+              <h3 class="project-card__title">Lista de Tareas</h3>
+              <p class="project-card__description">
+                Una to-do list con guardado en el navegador. Practiqué el DOM
+                y localStorage para que los datos no se pierdan al recargar.
+              </p>
+              <ul class="project-card__tags">
+                <li class="project-card__tag">JavaScript</li>
+                <li class="project-card__tag">DOM</li>
+                <li class="project-card__tag">localStorage</li>
+              </ul>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link">Ver Demo →</a>
+                <a href="#" class="project-card__link project-card__link--muted">Código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <!-- Contacto -->
+      <div class="container contact__container">
+        <div class="section__header">
+          <span class="section-header__label">Contacto</span>
+          <h2 class="section-header__title">Trabajemos juntos</h2>
+          <p class="section-header__description">
+            Si tienes una pregunta o te interesa mi trabajo, no dudes en contactarme.
+          </p>
+        </div>
+
+        <div class="contact__content">
+          <div class="contact__info">
+            <p class="contact__lead">
+              Estoy disponible para proyectos freelance y oportunidades de
+              tiempo completo. También me encanta conectar con otras personas que
+              están aprendiendo.
+            </p>
+
+            <ul class="contact__links">
+              <li>
+                <a href="mailto:jesus@ejemplo.com" class="contact__link">
+                  <span class="contact__link-icon">✉️</span>
+                  <span>
+                    <span class="contact__link-label">Email</span>
+                    <span class="contact__link-value">jesus@ejemplo.com</span>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://github.com/" target="_blank" rel="noopener" class="contact__link">
+                  <span class="contact__link-icon">💻</span>
+                  <span>
+                    <span class="contact__link-label">GitHub</span>
+                    <span class="contact__link-value">@tu-usuario</span>
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener" class="contact__link">
+                  <span class="contact__link-icon">🔗</span>
+                  <span>
+                    <span class="contact__link-label">LinkedIn</span>
+                    <span class="contact__link-value">in/tu-perfil</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+            <!-- FORMULARIO -->
+          <form class="contact__form" action="https://formspree.io/f/xzdqbjrl" method="POST">
+            <div class="form__group">
+              <label class="form__label" for="name">Nombre</label>
+              <input class="form__input" type="text" id="name" name="name" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" id="email" name="email" placeholder="tu@correo.com" required>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">Mensaje</label>
+              <textarea class="form__input form__textarea" id="message" name="message" rows="5"
+                placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__submit">
+              Enviar Mensaje
+            </button>
+            <p class="form__message" hidden aria-live="polite">Gracias por tu Mensaje</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <!-- Pie de página -->
+
+    <div class="container footer__container">
+      <a href="#" class="footer__logo">
+        Alberto Castillo <span class="header__logo-accent">.</span>
+      </a>
+
+      <nav class="footer__nav" aria-label="Navegación del pie de pagina">
+        <a href="#about" class="footer__nav-link">Sobre mi</a>
+        <a href="#skills" class="footer__nav-link">Habilidades</a>
+        <a href="#projects" class="footer__nav-link">Proyectos</a>
+        <a href="#contact" class="footer__nav-link">Contacto</a>
+      </nav>
+
+      <p class="footer__copy">© 2026 Alberto Castillo. Hecho con HTML y CSS.</p>
+    </div>
+  </footer>
+</body>
+<script src="JS/name.js"></script>
+</html>
